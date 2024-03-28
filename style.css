@@ -170,134 +170,255 @@
   }
 
   
-  @media screen and (max-width: 414px) {
-    body {
-      background-image: url(bgphone.jpg);
-    }
-  
-    .card {
-      width: 90%;
-      max-width: 300px; /* Adjusted width for iPhone 11 Pro */
-      height: auto;
-      position: relative;
-      margin: 50px auto;
-      -webkit-perspective: 800px;
-      perspective: 800px;
-      transition: 0.5s;
-      background-color: white;
-    }
-  
-    .card:hover {
-      transform: rotate(-3deg);
-    }
-  
-    .card:hover .outside {
-      transform: rotateY(-90deg);
-    }
-  
-    .outside,
-    .inside {
-      width: 90%;
-      left: 50%;
-      transform: translateY(-50%);
-    }
-  
-    .inside {
-      padding: 0 10px;
-      line-height: 1;
-      background: linear-gradient(to right, #e7e7e7, #ffffff 10%);
-    }
-  
-    .outside {
-      transition: 1s;
-      cursor: pointer;
-    }
-  
-    .front,
-    .back {
-      width: 100%;
-      height: 100%;
-    }
-  
-    .front {
-      background-color: white;
-    }
-  
-    .front p {
-      font-size: 20px; /* Adjusted font size */
-    }
-  
-    .back {
-      background: linear-gradient(to bottom, #e7e7e7, #ffffff 30%);
-    }
-  
-    .cake {
-      width: 80%;
-      max-width: 240px; /* Adjusted width for iPhone 11 Pro */
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .top-layer,
-    .middle-layer,
-    .bottom-layer {
-      height: 50px; /* Adjusted height */
-      width: 180px; /* Adjusted width */
-      background-size: 36px 60px; /* Adjusted background size */
-      background-position: 14px 0; /* Adjusted background position */
-      border-radius: 8px 8px 0 0;
-    }
-  
-    .middle-layer {
-      transform: scale(0.8);
-      top: 4px;
-    }
-  
-    .top-layer {
-      transform: scale(0.6);
-      top: 16px;
-    }
-  
-    .candle {
-      height: 25px; /* Adjusted height */
-      width: 8px; /* Adjusted width */
-      bottom: 120px; /* Adjusted position */
-    }
-  
-    .candle:before {
-      height: 10px; /* Adjusted height */
-      width: 10px; /* Adjusted width */
-      bottom: 30px; /* Adjusted position */
-    }
-  
-    .outside p {
-      font-size: 16px; /* Adjusted font size */
-      margin-top: 15px; /* Adjusted margin */
-      letter-spacing: 3px; /* Adjusted letter spacing */
-    }
-  
-    .inside h1 {
-      font-size: 2em; /* Adjusted font size */
-      line-height: 1.2;
-    }
-  
-    .inside h1 img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .inside p {
-      font-size: 0.7em; /* Adjusted font size */
-    }
-  
-    /* Position h4 to bottom right */
-    .inside h4 {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      margin: 10px;
-    }
+  @media screen and (max-width: 768px){
+  body{
+    background-image: url(donutPhoneBg.jpg);
+
   }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    margin: 50px auto;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    transition: 0.5s;
+    background-color: white;
+  }
+
+  .card:hover {
+    transform: rotate(-3deg);
+  }
+
+  .card:hover .outside {
+    transform: rotateY('-90deg');
+  }
+
+  .outside,
+  .inside {
+    width: 90%;
+    left: 50%;
+    transform: translateY(-50%);
+    
+  }
+
+  .inside {
+    padding: 0 10px;
+    line-height: 1;
+    background: linear-gradient(to right, #e7e7e7, #ffffff 10%);
+  }
+
+  .outside{
+    transition: 1s;
+    cursor: pointer;
+    
+  }
+
+  .front, .back{
+    width: 100%;
+    height: 100%;
+  }
+
+  .front{
+    background-color: white;
+  }
+
+  .front p{
+    font-size: 25px;
+  }
+
+  .back{
+    background: linear-gradient(to bottom, #e7e7e7, #ffffff 30%);
+  }
+
+  .cake {
+    width: 80%; 
+    max-width: 300px; 
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    height: 60px; 
+    width: 200px; 
+    background-size: 40px 80px; 
+    background-position: 18px 0; 
+    border-radius: 8px 8px 0 0; 
+
+  .middle-layer {
+    transform: scale(0.8); 
+    top: 4px; 
+  }
+
+  .top-layer {
+    transform: scale(0.6); 
+    top: 16px; 
+  }
+
+  .candle {
+    height: 30px;
+    width: 10px;
+    bottom: 150px;
+  }
+
+  .candle:before {
+    height: 12px;
+    width: 12px;
+    bottom: 36px;
+  }
+
+  .outside p {
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 4px;
+
+  }
+
+  .inside h1 {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+  
+  .inside h1 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .inside p {
+    font-size: 0.8em;
+  }
+
+}
+  
+@media screen and (max-width: 768px){
+  body{
+    background-image: url(bgphone.jpg);
+
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    margin: 50px auto;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    transition: 0.5s;
+    background-color: white;
+  }
+
+  .card:hover {
+    transform: rotate(-3deg);
+  }
+
+  .card:hover .outside {
+    transform: rotateY('-90deg');
+  }
+
+  .outside,
+  .inside {
+    width: 90%;
+    left: 50%;
+    transform: translateY(-50%);
+    
+  }
+
+  .inside {
+    padding: 0 10px;
+    line-height: 1;
+    background: linear-gradient(to right, #e7e7e7, #ffffff 10%);
+  }
+
+  .outside{
+    transition: 1s;
+    cursor: pointer;
+    
+  }
+
+  .front, .back{
+    width: 100%;
+    height: 100%;
+  }
+
+  .front{
+    background-color: white;
+  }
+
+  .front p{
+    font-size: 25px;
+  }
+
+  .back{
+    background: linear-gradient(to bottom, #e7e7e7, #ffffff 30%);
+  }
+
+  .cake {
+    width: 80%; 
+    max-width: 300px; 
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    height: 60px; 
+    width: 200px; 
+    background-size: 40px 80px; 
+    background-position: 18px 0; 
+    border-radius: 8px 8px 0 0; 
+
+  .middle-layer {
+    transform: scale(0.8); 
+    top: 4px; 
+  }
+
+  .top-layer {
+    transform: scale(0.6); 
+    top: 16px; 
+  }
+
+  .candle {
+    height: 30px;
+    width: 10px;
+    bottom: 150px;
+  }
+
+  .candle:before {
+    height: 12px;
+    width: 12px;
+    bottom: 36px;
+  }
+
+  .outside p {
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 4px;
+
+  }
+
+  .inside h1 {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+  
+  .inside h1 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .inside p {
+    font-size: 0.8em;
+  }
+
+}
   
